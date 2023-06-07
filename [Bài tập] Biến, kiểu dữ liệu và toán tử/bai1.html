@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biến kiểu dữ liệu và toán từ </title>
+</head>
+<body>
+    <script>
+        let VatLy
+        let HoaHoc
+        let SinhHoc
+    
+        VatLy = prompt("Nhập điểm Lý")
+        HoaHoc = prompt("Nhập Điểm Hóa")
+        SinhHoc = prompt("Nhập điểm Sinh")
+    
+        Ly = parseInt(VatLy)
+        Hoa = parseInt(HoaHoc)
+        Sinh = parseInt(SinhHoc)
+    
+    
+        let TongDiem = (Ly + Hoa + Sinh)
+        let DTB = TongDiem / 3
+        document.write("Điểm trung bình là :   " + DTB)
+    
+    </script>
+</body>
+</html>
