@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    <!--    Kiểm tra dữ liệu đầu vào, n > 0-->
+    let n;
+    do {
+        n = +prompt("Nhập vào n (n >= 0)");
+
+        if (n <= 0) {
+            alert("Giá trị của n không hợp lệ (n > 0). xin hãy nhập lại");
+        }
+    } while (n <= 0);
+
+    // let n = -1;
+    // while (n <= 0) {
+    //     n = +prompt("Nhập vào n");
+    //     if (n <= 0) {
+    //         alert("Giá trị của n không hợp lệ (n > 0). xin hãy nhập lại");
+    //     }
+    // }
+    // alert("n: " + n)
+</script>
+</body>
+</html>
