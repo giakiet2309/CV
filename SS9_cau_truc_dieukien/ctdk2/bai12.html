@@ -7,7 +7,7 @@
 </head>
 <body>
     <input type="number" id="month" placeholder="Nhập số tháng vay"><br>
-    <br>z
+    <br>
     <input type="number" id="money" placeholder="Nhập số tiền vay"> Triệu đồng
     <br>
     <button onclick="tinhlai()">Tính</button>
@@ -17,14 +17,14 @@
         let thang = +document.getElementById("month").value;
         let tien  = +document.getElementById("money").value;
         let amount1 = (tien * 0.09) / thang;
-        let amount2 = (tien * 0.1) / thang;
-        let amount3 = (tien * 0.08) / thang;
+        let amount3 = (tien * 0.1) / thang;
+        let amount2 = (tien * 0.08) / thang;
     if (thang >= 12 && thang <= 24) {
         document.getElementById("result").innerHTML="Số tiền phải đóng: " + amount1.toFixed(2) + " Đ";
     } else if (thang < 12) {
-        alert("Số tiền phải đóng: " + amount3 + " Đ");
-    } else {
-        alert("Số tiền phải đóng: " + amount2 + " Đ");
+        document.getElementById("result").innerHTML="Số tiền phải đóng: " + amount2.toFixed(2) + " Đ";
+    } else if (thang > 24) {
+        document.getElementById("result").innerHTML="Số tiền phải đóng: " + amount3.toFixed(2) + " Đ";
     }
 }
     </script>
