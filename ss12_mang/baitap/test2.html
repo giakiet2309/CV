@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea name="txt" cols="40" rows="10" onkeydown="typeTextarea();"></textarea>
+
+
+
+    <script>
+        
+        var a=new Array(),n="";
+            a[1]='M';a[2]='u';a[3]='';a[4]='V';a[5]='ô';a[6]='';a[7]='Đ ';a[8]='ị';a[9]='c';a[10]='h';a[11]=' ';a[12]='!';a[13]='!';a[14]='!';a[15]=' ';a[16]='!';a[17]='!';a[18]='!';a[19]='!';a[20]='!';a[21]='!';a[22]='!';
+            function typeTextarea(){
+                t = document.f.txt.value;
+                j = t.length;
+                if(j > 0)
+                {
+                    for(var i=1; i<=j; i++)
+                    {
+                        n = n + a[i];
+                        if(i == 22)
+                        {
+                            document.f.txt.value = "";
+                            n = "";
+                        }
+                    }
+                }
+                document.f.txt.value = n;
+                n="";
+                setTimeout("typeTextarea()", 1);
+                //return false;
+            }
+        
+    </script>
+</body>
+</html>
